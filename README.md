@@ -17,7 +17,6 @@ LlamaChunkSplitter is a sophisticated text chunking tool that uses LLaMA languag
 - Python 3.6+
 - llama-cpp-python
 - numpy
-- typing
 
 ```bash
 pip install llama-cpp-python numpy
@@ -100,8 +99,56 @@ Frodo was crushed by the news.段 How could they hope to reach Rivendell on foot
 'As much as we must,' said P段ippin with a sinking heart, but trying to show that段 he was tougher than he looked (or felt).段
 ```
 Result
+
 ```python
-['In the early night Frodo woke from deep sleep, suddenly, as if some sound or presence had disturbed him. He saw that Strider', 'was sitting alert in his chair: his eyes gle', 'amed in the light of the fire, which had', 'been tended and was burning brightly; but he made no', 'sign or movement.\n     Frodo soon went to sleep again', '; but his dreams were again troubled with the noise of wind and', 'of galloping hoofs. The wind seemed to be curling round the house and', 'shaking it; and far off he heard a horn', 'blowing wildly. He opened his eyes, and heard', 'a cock crowing lustily in the inn-yard. Str', 'ider had drawn the curtains and pushed back the shut', 'ters with a clang. The first grey light of', 'day was in the room, and a cold air', 'was coming through the open window.\n     As soon as Strider', 'had roused them all, he led the way to', 'their bedrooms. When they saw them they were glad', 'that they had taken his advice: the windows had been forced open and were swinging,', 'and the curtains were flapping; the beds were tossed about', ', and the bolsters slashed and flung upon', 'the floor; the brown mat was torn to pieces.\n     Strider immediately went', 'to fetch the landlord. Poor Mr. Butterbur', 'looked sleepy and frightened. He had hardly closed his eyes all', "night (so he said), but he had never heard a sound.\n     'Never has such a thing happened in my time!'", "he cried, raising his hands in horror. 'Guests", 'unable to sleep in their beds, and good bolsters ruined and all', "! What are we coming to?'\n     'Dark times,'", "said Strider. 'But for the present you", 'may be left in peace, when you have got rid of us. We', 'will leave at once. Never mind about breakfast: a drink and', 'a bite standing will have to do. We shall', "be packed in a few minutes.'\n     Mr. Butterbur hurried", 'off to see that their ponies were got ready', ", and to fetch them a 'bite'. But very soon", 'he came back in dismay. The ponies had vanished', '! The stable-doors had all been opened in the night', ", and they were gone: not only Merry's ponies", ', but every other horse and beast in the place.\n     Frodo was crushed by the news.', 'How could they hope to reach Rivendell on foot, pursued by mounted enemies', '? They might as well set out for the Moon', '. Strider sat silent for a while, looking', "at the hobbits, as if he was weighing up their strength and courage.\n     'Ponies would", "not help us to escape horsemen,' he said at last, thoughtfully", ", as if he guessed what Frodo had in mind. '", 'We should not go much slower on foot, not', 'on the roads that I mean to take. I was going to walk in any', 'case. It is the food and stores that trouble me. We cannot count on', 'getting anything to eat between here and Rivendell, except', 'what we take with us; and we ought to', 'take plenty to spare; for we may be delayed, or forced to go round-about', ', far out of the direct way. How much are you prepared to carry on your', "backs?'\n     'As much as we must,' said P", 'ippin with a sinking heart, but trying to show that', 'he was tougher than he looked (or felt).']
+['In the early night Frodo woke from deep sleep, suddenly, as if some sound or presence had disturbed him. He saw that Strider',
+'was sitting alert in his chair: his eyes gle',
+'amed in the light of the fire, which had',
+'been tended and was burning brightly; but he made no',
+'sign or movement.\n     Frodo soon went to sleep again',
+'; but his dreams were again troubled with the noise of wind and',
+'of galloping hoofs. The wind seemed to be curling round the house and',
+'shaking it; and far off he heard a horn', 'blowing wildly. He opened his eyes, and heard',
+'a cock crowing lustily in the inn-yard. Str',
+'ider had drawn the curtains and pushed back the shut',
+'ters with a clang. The first grey light of',
+'day was in the room, and a cold air',
+'was coming through the open window.\n     As soon as Strider',
+'had roused them all, he led the way to',
+'their bedrooms. When they saw them they were glad',
+'that they had taken his advice: the windows had been forced open and were swinging,',
+'and the curtains were flapping; the beds were tossed about',
+', and the bolsters slashed and flung upon',
+'the floor; the brown mat was torn to pieces.\n     Strider immediately went',
+'to fetch the landlord. Poor Mr. Butterbur',
+'looked sleepy and frightened. He had hardly closed his eyes all', "night (so he said), but he had never heard a sound.\n     'Never has such a thing happened in my time!'", "he cried, raising his hands in horror. 'Guests",
+'unable to sleep in their beds, and good bolsters ruined and all', "! What are we coming to?'\n     'Dark times,
+'", "said Strider. 'But for the present you",
+'may be left in peace, when you have got rid of us. We',
+'will leave at once. Never mind about breakfast: a drink and',
+'a bite standing will have to do. We shall', "be packed in a few minutes.'\n     Mr. Butterbur hurried",
+'off to see that their ponies were got ready',
+", and to fetch them a 'bite'. But very soon",
+'he came back in dismay. The ponies had vanished',
+'! The stable-doors had all been opened in the night',
+", and they were gone: not only Merry's ponies",
+', but every other horse and beast in the place.\n     Frodo was crushed by the news.',
+'How could they hope to reach Rivendell on foot, pursued by mounted enemies',
+'? They might as well set out for the Moon',
+'. Strider sat silent for a while, looking',
+"at the hobbits, as if he was weighing up their strength and courage.\n     'Ponies would",
+"not help us to escape horsemen,' he said at last, thoughtfully",
+", as if he guessed what Frodo had in mind. '",
+'We should not go much slower on foot, not',
+'on the roads that I mean to take. I was going to walk in any',
+'case. It is the food and stores that trouble me. We cannot count on',
+'getting anything to eat between here and Rivendell, except',
+'what we take with us; and we ought to',
+'take plenty to spare; for we may be delayed, or forced to go round-about',
+', far out of the direct way. How much are you prepared to carry on your',
+"backs?'\n     'As much as we must,' said P",
+'ippin with a sinking heart, but trying to show that',
+'he was tougher than he looked (or felt).']
 ```
 
 The resulting chunks can then be used effectively in a RAG pipeline, maintaining context and readability while staying within token limits.
