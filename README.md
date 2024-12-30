@@ -28,12 +28,13 @@ pip install llama-cpp-python numpy
 ### Basic Example
 
 ```python
-from llama_chunk_splitter import LlamaChunkSplitter
+class LlamaChunkSplitter:
+    ...
 
 # Initialize the splitter
 splitter = LlamaChunkSplitter(
     model_path="path/to/your/llama/model.gguf",
-    n_gpu_layers=33
+    n_gpu_layers=-1
 )
 
 # Split text into chunks
