@@ -1,4 +1,4 @@
-# LlamaChunkSplitter
+# Novel Text Splitter
 
 LlamaChunkSplitter is a sophisticated text chunking tool that uses LLaMA language models to intelligently split text at natural boundaries. It's particularly useful for RAG (Retrieval-Augmented Generation) pipelines where effective document chunking is crucial for improved retrieval performance.
 The LLM does NOT generate any text. This splitter is using logprobs to 'decide' where to split the given text.
