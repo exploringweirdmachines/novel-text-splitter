@@ -86,6 +86,7 @@ result = get_text_chunks(text, chunks)
 print(result)
 ```
 
+Text with spliting token '段' inserted
 ```bash
 In the early night Frodo woke from deep sleep, suddenly, as if some sound or presence had disturbed him. He saw that Strider段 was sitting alert in his chair: his eyes gle段amed in the light of the fire, which had段 been tended and was burning brightly; but he made no段 sign or movement.
 Frodo soon went to sleep again段; but his dreams were again troubled with the noise of wind and段 of galloping hoofs. The wind seemed to be curling round the house and段 shaking it; and far off he heard a horn段 blowing wildly. He opened his eyes, and heard段 a cock crowing lustily in the inn-yard. Str段ider had drawn the curtains and pushed back the shut段ters with a clang. The first grey light of段 day was in the room, and a cold air段 was coming through the open window.
